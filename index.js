@@ -48,6 +48,19 @@ exports.getJsonFromCsv = function (inputFileName) {
 };
 
 /**
+ * Parses a CSV string into an Array or Object
+ * @param {parsedCsv} string
+ *
+ * @return {Array<any>|Object} Array or Object
+ */
+exports.csvStringToJson = function (parsedCsv) {
+    if (!parsedCsv) {
+        throw new Error('parsedCsv is not defined!!!');
+    }
+    return csvToJson.csvToJson(parsedCsv);
+};
+
+/**
  * Parses .csv file and put its content into a file in json format.
  * @param {inputFileName} path/filename
  * @param {outputFileName} path/filename

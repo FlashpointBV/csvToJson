@@ -1,14 +1,14 @@
 {
   "name": "convert-csv-to-json",
-  "version": "0.0.14",
-  "description": "Convert CSV to JSON",
+  "version": "0.0.15",
+  "description": "Convert CSV string to JSON",
   "main": "index.js",
   "scripts": {
     "test": "./node_modules/.bin/mocha --reporter spec"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/iuccio/CSVtoJSON.git"
+    "url": "https://github.com/FlashpointBV/csvToJson"
   },
   "keywords": [
     "csv",
@@ -30,9 +30,9 @@
   "author": "iuccio",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/iuccio/CSVtoJSON/issues"
+    "url": "https://github.com/FlashpointBV/csvToJson/issues"
   },
-  "homepage": "https://github.com/iuccio/CSVtoJSON#readme",
+  "homepage": "https://github.com/FlashpointBV/csvToJson/CSVtoJSON#readme",
   "devDependencies": {
     "chai": "^4.0.2",
     "gulp": "^3.9.1",

@@ -38,3 +38,12 @@ exports.csvStringToJson = function (parsedCsv) {
 
     return csvToJson.csvToJson(parsedCsv);
 };
+
+/**
+ * Return csvToJson object
+ * 
+ * @return {csvToJson} CsvToJson object
+ */
+exports.csvToJson = function () {
+    return csvToJson;
+};

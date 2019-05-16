@@ -1,6 +1,6 @@
 {
   "name": "convert-csv-string-to-json",
-  "version": "0.0.15",
+  "version": "0.0.1",
   "description": "Convert CSV string to JSON",
   "main": "index.js",
   "scripts": {

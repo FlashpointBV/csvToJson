@@ -1,6 +1,5 @@
 'use strict';
 
-let fileUtils = require('././util/fileUtils');
 let stringUtils = require('././util/stringUtils');
 let jsonUtils = require('././util/jsonUtils');
 

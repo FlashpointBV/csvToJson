@@ -19,23 +19,6 @@ class CsvToJson {
         return this;
     }
 
-    generateJsonFileFromCsv(fileInputName, fileOutputName) {
-        let jsonStringified = this.getJsonFromCsvStringified(fileInputName);
-        fileUtils.writeFile(jsonStringified, fileOutputName);
-    }
-
-    getJsonFromCsvStringified(fileInputName) {
-        let json = this.getJsonFromCsv(fileInputName);
-        let jsonStringified = JSON.stringify(json, undefined, 1);
-        jsonUtils.validateJson(jsonStringified);
-        return jsonStringified;
-    }
-
-    getJsonFromCsv(fileInputName) {
-        let parsedCsv = fileUtils.readFile(fileInputName);
-        return this.csvToJson(parsedCsv);
-    }
-
     csvToJson(parsedCsv) {
         let lines = parsedCsv.split(newLine);
         let fieldDelimiter = this.getFieldDelimiter();
